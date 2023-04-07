@@ -16,7 +16,7 @@ a{
 }
 
 :root{
-   --cor-primaria:#4d6591;
+   --cor-primaria:#3e5580;
    --cor-secundaria:#f2da7e;
    --cor-terciaria:#cf6361;
 }
@@ -37,7 +37,12 @@ nav #icons li img{
   width: 40px;
   height: 40px;
 }
-div{
+nav > #icons > li > a:hover > img{
+  width: 50px;
+  height: 50px;
+  transition:ease-in-out 0.2s;
+}
+#icons > li > a{
   margin: 20px;
   margin-right: 20px;
   padding: 3px;
@@ -56,6 +61,7 @@ nav #nav{
   font-weight: bolder;
   font-size: 1.4em;
   margin: 30px;
+  margin-right: 0px;
   float:right ;
 }
 nav #nav li{
@@ -64,10 +70,65 @@ nav #nav li{
 }
 
 header{
-  text-align: center;
+ width: 100vw;
+ text-align: center;
+ justify-content: center;
 }
 
-header img{
+header div{
+  background-image: url(imgs/0000.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
   width: 400px;
-  height: auto;
+  height:400px;
+  border-radius: 50%;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+header h1{
+ color: var(--cor-secundaria);
+ font-size: 2.5em;
+ font-weight: bold;
+}
+header p {
+  margin: auto;
+  margin-top: 15px;
+  width: 500px;
+  color: white;
+  font-size:1.1em;
+  line-height: 25px;
+}
+section{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--cor-primaria);
+}
+article h1{
+  color: var(--cor-secundaria);
+  font-size: 2.5em;
+  font-weight:bold;
+}
+article h2{
+  color: var(--cor-secundaria);
+  font-size: 1.8em;
+  font-weight: lighter;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+#hobies, #habilidades{
+  margin-top: 50px;
+  text-align: center;
+  width: 50%;
+  height: 600px;
+}
+#hobies img, #habilidades img{
+  background-color: #f2da7e;
+  border-radius: 35px;
+  padding: 20px;
+  width: 100px;
+  height: 80px;
 }
