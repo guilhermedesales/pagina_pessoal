@@ -12,22 +12,26 @@
 }
 a{
   text-decoration: none;
-  color: var(--cor-secundaria);
+  color: var(--cor-nav);
 }
 
 :root{
-   --cor-primaria:#3e5580;
-   --cor-secundaria:#f2da7e;
-   --cor-terciaria:#cf6361;
+   --cor-1:#61768C;
+   --cor-2:#293440;
+   --cor-3:#8C5D5A;
+   --cor-4:#3F4036;
+   --cor-5:#7A8C76;
+   --cor-nav:#D9A4A0;
 }
 
 body{
   font-family: 'louis george', Arial, Helvetica, sans-serif;
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-4);
 }
 nav{
   width: 100vw;
-  background-color:#401D1A;
+  backdrop-filter: blur(6px);
+  background-color:transparent;
   position: fixed;
   top: 0;
   z-index: 100;
@@ -54,14 +58,14 @@ nav > #icons > li > a:hover > img{
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-nav);
   border-radius:50%;
 }
 
 nav #nav{
   list-style: none;
   display: inline-flex;
-  color: var(--cor-terciaria);
+  color: var(--cor-1);
   font-weight: bolder;
   font-size: 1.4em;
   margin: 30px;
@@ -78,7 +82,7 @@ nav #nav{
   right: 100%;
   bottom: -2px;
   height:3px;
-  background-color:var(--cor-terciaria);
+  background-color:var(--cor-nav);
   transition: ease-out right .3s;
 }
 
@@ -91,10 +95,14 @@ nav #nav li{
   margin-top: 12px;
 }
 header{
- width: 99vw;
- text-align: center;
- justify-content: center;
- padding-top: 200px;
+  background-image: url(imgs/pexels-toni-cuenca-585752.jpg) ;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 99vw;
+  height: 800px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 200px;
 }
 
 header div{
@@ -110,29 +118,37 @@ header div{
   margin-bottom: 25px;
 }
 header h1{
- color: var(--cor-secundaria);
- font-size: 2.5em;
- font-weight: bold;
+  width: 300px;
+  margin: auto;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.033);
+  color: var(--cor-1);
+  font-size: 2.5em;
+  font-weight: bold;
+
 }
 header p {
   margin: auto;
   margin-top: 15px;
   width: 500px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.033);
+  padding: 10px;
   color: white;
   font-size:1.1em;
   line-height: 25px;
 }
 section{
   display: flex;
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-4);
 }
 article h1{
-  color: var(--cor-secundaria);
-  font-size: 2.5em;
+  color: var(--cor-3);
+  font-size: 3em;
   font-weight:bold;
 }
 article h2{
-  color: var(--cor-secundaria);
+  color: var(--cor-5);
   font-size: 1.8em;
   font-weight: lighter;
   margin-top: 40px;
@@ -146,19 +162,20 @@ article h2{
   height: 700px;
 }
 #hobies img:hover, #habilidades img:hover{
- box-shadow: inset 2px 2px 12px rgba(0, 0, 0, 0.615);
- background-color: #d9c46d;
- padding: 25px;
- width: 90px;
+  border-radius: 35px;
+  box-shadow: inset 22px 22px 44px #774f4d,inset -22px -22px 44px #a16b68;
+  background-color:var(--cor-3);
+  padding: 25px;
+  width: 90px;
   height: 70px;
 }
 #hobies img, #habilidades img{
-  background-color: #f2da7e;
+  background-color:var(--cor-1);
   border-radius: 35px;
+  box-shadow:  22px 22px 44px #36362e,-22px -22px 44px #484a3e;
   padding: 20px;
   width: 100px;
   height: 80px;
-  box-shadow:3px 2px 15px #ffffff55, -3px -2px 15px rgba(0, 0, 0, 0.306);
   transition: all ease-in-out .2s;
 }
 .wave {
@@ -175,15 +192,15 @@ article h2{
 }
 
 .wave #fill1 {
-  fill: var(--cor-primaria);
+  fill: var(--cor-4);
 }
 .wave #fill2 {
-  fill: var(--cor-secundaria);
+  fill: var(--cor-2);
 }
 #projetos{
   width: 99vw;
   height: 1600px;
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-2);
   display: block;
   margin: auto;
 }
@@ -191,8 +208,8 @@ article h2{
   padding-top: 100px;
   margin-left:120px;
   margin-bottom: 100px;
-  color: var(--cor-primaria);
-  font-size: 3.8em;
+  color: var(--cor-1);
+  font-size: 4em;
   font-weight: bold;
   width: auto;
   height: 100px;
@@ -202,7 +219,7 @@ article h2{
   height: 380px;
   margin: auto;
   margin-top: 50px;
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-5);
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -219,7 +236,7 @@ article h2{
 }
 article > .proj {
   display: none;
-  color: var(--cor-secundaria);
+  color: var(--cor-2);
   margin: 30px;
   margin-top: 100px;
   font-size: 1.4em;
@@ -235,12 +252,12 @@ article:hover > a.proj {
 display: block;
 } 
 #contato{
-  background-color: var(--cor-terciaria);
+  background-color: var(--cor-3);
   width: 99vw;
   height: 1000px;
 }
 #contato > h1{
-color: var(--cor-secundaria);
+color: var(--cor-2);
 }
 
 
