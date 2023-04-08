@@ -12,16 +12,16 @@
 }
 a{
   text-decoration: none;
-  color: var(--cor-nav);
+  color: var(--cor-6);
 }
 
 :root{
-   --cor-1:#61768C;
-   --cor-2:#293440;
-   --cor-3:#8C5D5A;
-   --cor-4:#3F4036;
-   --cor-5:#7A8C76;
-   --cor-nav:#D9A4A0;
+   --cor-1:#6E7A6F;
+   --cor-2:#A67458;
+   --cor-3:#948E84;
+   --cor-5:#C4C3C7;
+   --cor-6:#ABAAAD;
+   --cor-h1:#323233;
 }
 
 body{
@@ -58,7 +58,7 @@ nav > #icons > li > a:hover > img{
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: var(--cor-nav);
+  background-color: var(--cor-6);
   border-radius:50%;
 }
 
@@ -95,10 +95,12 @@ nav #nav li{
   margin-top: 12px;
 }
 header{
-  background-image: url(imgs/pexels-toni-cuenca-585752.jpg) ;
+  background-image: url(imgs/pexels-photo-2931290.jpeg) ;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  width: 99vw;
+  width: 99;
   height: 800px;
   text-align: center;
   justify-content: center;
@@ -122,7 +124,7 @@ header h1{
   margin: auto;
   backdrop-filter: blur(6px);
   background-color: rgba(0, 0, 0, 0.033);
-  color: var(--cor-1);
+  color: var(--cor-5);
   font-size: 2.5em;
   font-weight: bold;
 
@@ -138,12 +140,21 @@ header p {
   font-size:1.1em;
   line-height: 25px;
 }
-section{
+#about{
   display: flex;
-  background-color: var(--cor-4);
+  background-color:#6E7A6F;
+  height: 1200px;
+}
+#projetos{
+  display: flex;
+  background-image: url(imgs/pexels-photo-8355460.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
 }
 article h1{
-  color: var(--cor-3);
+  color: var(--cor-h1);
   font-size: 3em;
   font-weight:bold;
 }
@@ -192,7 +203,7 @@ article h2{
 }
 
 .wave #fill1 {
-  fill: var(--cor-4);
+  fill: var(--cor-1);
 }
 .wave #fill2 {
   fill: var(--cor-2);
@@ -257,7 +268,7 @@ display: block;
   height: 1000px;
 }
 #contato > h1{
-color: var(--cor-2);
+color:var(--cor-h1);
 }
 
 
