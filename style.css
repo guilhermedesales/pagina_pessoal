@@ -82,7 +82,7 @@ nav #nav{
   right: 100%;
   bottom: -2px;
   height:3px;
-  background-color:var(--cor-nav);
+  background-color:var(--cor-2);
   transition: ease-out right .3s;
 }
 
@@ -173,21 +173,21 @@ article h2{
   height: 700px;
 }
 #hobies img:hover, #habilidades img:hover{
-  border-radius: 35px;
-  box-shadow: inset 22px 22px 44px #774f4d,inset -22px -22px 44px #a16b68;
-  background-color:var(--cor-3);
+  border-radius: 45px;
+  background: #6E7A6F;
+  box-shadow: inset 33px 33px 66px #5e685e,inset -33px -33px 66px #7f8c80;
   padding: 25px;
-  width: 90px;
-  height: 70px;
+  width: 130px;
+  height: 110px;
 }
 #hobies img, #habilidades img{
-  background-color:var(--cor-1);
-  border-radius: 35px;
-  box-shadow:  22px 22px 44px #36362e,-22px -22px 44px #484a3e;
+  border-radius: 45px;
+  background: #6E7A6F;
+  box-shadow:  33px 33px 66px #5e685e, -33px -33px 66px #7f8c80;
   padding: 20px;
-  width: 100px;
-  height: 80px;
-  transition: all ease-in-out .2s;
+  width: 140px;
+  height: 120px;
+  transition: all ease-in-out .3s;
 }
 .wave {
   position: absolute;
@@ -202,15 +202,26 @@ article h2{
   height: 72px;
 }
 
-.wave #fill1 {
+.wave .fill1 {
   fill: var(--cor-1);
 }
-.wave #fill2 {
-  fill: var(--cor-2);
+.wave2 {
+  position: absolute;
+  bottom: -3060px;
+  width: 99.85%;
+}
+.wave2 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 103px;
+}
+.wave2 .fill2 {
+  fill: var(--cor-3);
 }
 #projetos{
   width: 99vw;
-  height: 1600px;
+  height: 1800px;
   background-color: var(--cor-2);
   display: block;
   margin: auto;
@@ -264,10 +275,11 @@ display: block;
 } 
 #contato{
   background-color: var(--cor-3);
-  width: 99vw;
+  width: 100%;
   height: 1000px;
 }
 #contato > h1{
+  padding-top: 20px;
 color:var(--cor-h1);
 }
 
